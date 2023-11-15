@@ -24,26 +24,6 @@
     list-style-type: none;
 }
 
-@media (max-width:600px){
-  #container {
-    padding-top: 10%;
-      padding-left:10%;
-      padding-right:10%;
-      padding-bottom:10%;
-  }
-}
-
-@media(orientation:landscape){
-  #container{
-    background-color: red;
-  }
-  .indexsection(
-    padding: 10px;
-    margin: 10px;
-    border-radius: 4px;
-    font-family: "Merriweather", cursive;
-  }
-}
 #main-nav ul li {
   float: left;
   right: 50%;

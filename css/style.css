@@ -32,6 +32,16 @@
       padding-bottom:10%;
   }
 }
+
+@media(orientation:landscape){
+  #indexbody{
+    background-color: red;
+  }
+  .indexsection(
+    padding: 10px;
+    margin: 10px;
+    border-radius: 4px;
+    font-family: "Merriweather", cursive;
 #main-nav ul li {
   float: left;
   right: 50%;

@@ -1,88 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Google Maps Example</title>
-  <!-- Include the Google Maps API script with your API key -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-
-<body>
-  <header>
-    <nav id="main-nav">
-      <div id="nav-container">
-        <ul>
-          <li><a href="index.html">Resume</a></li>
-          <li><a href="basketballplayers.html">Basketball Players</a></li>
-          <li><a href="songs.html">Songs</a></li>
-          <li id="current"><a href="googlemaps.html">Google Maps</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-  <div id="container">
-    <!-- Add a container for the map -->
-    <div id="map"></div>
-
-    <!-- Additional scripts and links to other JS files -->
-    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="js/script.js"></script> <!-- Adjust the path if necessary -->
-    <script>
-      function initMap() {
-        // Your map initialization code goes here
-        var map = new google.maps.Map(document.getElementById('map'), {
-          center: {
-            lat: -34.397,
-            lng: 150.644
-          },
-          zoom: 8
-        });
-
-        // Additional features go here
-        // 1. Add a marker
-        var marker = new google.maps.Marker({
-          position: {
-            lat: -34.397,
-            lng: 150.644
-          },
-          map: map,
-          title: 'Marker Title'
-        });
-
-        // 2. Add an info window
-        var infowindow = new google.maps.InfoWindow({
-          content: 'This is an info window content'
-        });
-
-        marker.addListener('click', function () {
-          infowindow.open(map, marker);
-        });
-
-        // 3. Add a polyline (example line between two points)
-        var flightPath = new google.maps.Polyline({
-          path: [{
-              lat: -34.397,
-              lng: 150.644
-            },
-            {
-              lat: -35.297,
-              lng: 151.744
-            }
-          ],
-          geodesic: true,
-          strokeColor: '#FF0000',
-          strokeOpacity: 1.0,
-          strokeWeight: 2
-        });
-
-        flightPath.setMap(map);
-      }
-    </script>
-  </div>
-</body>
-
+  <head>
+    <meta charset="utf-8">
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAB0x1Js65vWCpxig-QWxexBAyjL-EX5bw&callback=initMap"></script>
+    <script async src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav id="main-navbar">
+        <div id="navbar-container">
+          <ul>
+            <li><a href="index.html">Resume</a></li>
+            <li><a href="basketballplayers.html">Basketball Players</a></li>
+			<li><a href="songs.html">Songs</a></li>
+            <li id="current"><a href="map.html">Map</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <h1 id="maph1">Map</h1>
+    <div id="mapwrapper">
+      <div id="mapcanvas"></div>
+    </div>
+  </body>
 </html>

@@ -10,6 +10,7 @@
   position: relative;
   text-decoration: none;
 }
+
 #main-nav ul {
   list-style-type: none;
   margin: 0;
@@ -21,7 +22,7 @@
 }
 
 #no-bullets ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 #main-nav ul li {
@@ -66,7 +67,9 @@
   color: black;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Arvo', cursive;
   font-size: 30px;
 }
@@ -75,31 +78,32 @@ h1, h2, h3 {
   #container {
     width: 100%;
     padding: 10px;
-}
+  }
 
   #container p {
     font-size: 16px;
   }
 
-  h1, h2, h3 {
+  h1,
+  h2,
+  h3 {
     font-size: 24px;
   }
-  
+
   #main-nav ul {
-    text-align: center; 
-    padding: 10px; 
+    text-align: center;
+    padding: 10px;
   }
 
   #main-nav ul li {
     display: block;
-    width: 100%; 
+    width: 100%;
   }
 }
 
-
 @media only screen and (max-width: 400px) {
   #main-nav ul li a {
-    padding: 5px 10px; 
+    padding: 5px 10px;
   }
 
   #main-nav {
@@ -125,9 +129,9 @@ iframe {
   padding: 10px;
   text-align: center;
   color: blue;
-}  
+}
 
-#songs-wrapper h1{
+#songs-wrapper h1 {
   text-decoration: solid underline blue 4px;
 }
 
@@ -135,21 +139,50 @@ iframe {
   padding: 10px;
   text-align: center;
   background-color: #FF6F61;
-}  
+}
 
-#basketballplayers-wrapper h1{
+#basketballplayers-wrapper h1 {
   border: solid peru 10px;
   border-style: double;
   background-color: wheat;
   margin: 10px 300px;
   color: brown;
-}     
+}
 
-#basketballplayers-wrapper p{
+#basketballplayers-wrapper p {
   font-family: 'Merriweather', cursive;
   text-decoration: none;
 }
 
-#basketballplayers-wrapper h3{
+#basketballplayers-wrapper h3 {
   font-size: 20px;
-}  
+}
+
+#mapwrapper {
+  width: 800px;
+  height: 500px;
+  background-color: #F5CBA7;
+  margin: 20px auto;
+  overflow: hidden;
+  border: 5px solid #E74C3C;
+}
+
+#mapcanvas {
+  width: 650px;
+  height: 400px;
+  background-color: #3498db;
+  margin: 25px auto;
+  color: #2c3e50;
+  border: 5px solid #2980b9;
+}
+
+#maph1 {
+  color: #2c3e50;
+  font-size: 36px;
+}
+
+.mapp {
+  color: #2c3e50;
+  font-size: 16px;
+  margin-top: 10px;
+}

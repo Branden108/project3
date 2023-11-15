@@ -13,8 +13,8 @@ function initMap() {
   var customMarker = new google.maps.Marker({
     position: { lat: 42.12259292602539, lng: -88.37287139892578 },
     map: map,
-    title: 'Custom Marker',
-    icon: 'path/to/custom-marker.png',
+    title: 'Gilberts Grizzly',
+    icon: 'images/gilbertsgrizzly.png',
   });
 
   var polygon = new google.maps.Polygon({

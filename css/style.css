@@ -42,6 +42,8 @@
     margin: 10px;
     border-radius: 4px;
     font-family: "Merriweather", cursive;
+  }
+}
 #main-nav ul li {
   float: left;
   right: 50%;

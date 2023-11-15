@@ -1,0 +1,133 @@
+#main-nav {
+  background-color: #a6a6a6;
+  overflow: hidden;
+  text-decoration: none;
+}
+
+#nav-container {
+  float: left;
+  width: 100%;
+  position: relative;
+  text-decoration: none;
+}
+#main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: 50%;
+  float: left;
+  text-decoration: none;
+}
+
+#no-bullets ul {
+    list-style-type: none;
+}
+
+@media (max-width:600px){
+  #indexbody {
+    color:white;
+    header {
+      font-size: 18px;
+    }
+    main {
+      padding: 10px;
+    }
+    section {
+      margin-bottom: 10px;
+    }
+  }
+    
+#main-nav ul li {
+  float: left;
+  right: 50%;
+  display: block;
+  position: relative;
+  text-decoration: none;
+}
+
+#main-nav ul li a {
+  display: block;
+  text-decoration: none;
+  font-family: 'Arvo', cursive;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+  padding: 10px 20px;
+}
+
+#main-nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration: none;
+}
+
+#current {
+  text-decoration: underline;
+}
+
+#container {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+  list-style-type: none;
+}  
+
+#container p {
+  font-family: 'Merriweather', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3 {
+  font-family: 'Arvo', cursive;
+  font-size: 30px;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  position: static;
+}
+
+iframe {
+  height: 300px;
+  width: 500px;
+  position: static;
+  border: 0;
+}
+
+#songs-wrapper {
+  padding: 10px;
+  text-align: center;
+  color: blue;
+}  
+
+#songs-wrapper h1{
+  text-decoration: solid underline blue 4px;
+}
+
+#basketballplayers-wrapper {
+  padding: 10px;
+  text-align: center;
+  background-color: #FF6F61;
+}  
+
+#basketballplayers-wrapper h1{
+  border: solid peru 10px;
+  border-style: double;
+  background-color: wheat;
+  margin: 10px 300px;
+  color: brown;
+}     
+
+#basketballplayers-wrapper p{
+  font-family: 'Merriweather', cursive;
+  text-decoration: none;
+}
+
+#basketballplayers-wrapper h3{
+  font-size: 20px;
+}  

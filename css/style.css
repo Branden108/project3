@@ -25,7 +25,7 @@
 }
 
 @media (max-width:600px){
-  #indexbody {
+  #container {
     padding-top: 10%;
       padding-left:10%;
       padding-right:10%;
@@ -34,7 +34,7 @@
 }
 
 @media(orientation:landscape){
-  #indexbody{
+  #container{
     background-color: red;
   }
   .indexsection(

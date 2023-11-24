@@ -157,36 +157,39 @@ iframe {
   font-size: 20px;
 }
 
-#mapwrapper {
-  width: 800px;
-  height: 500px;
-  background-color: #F5CBA7;
-  margin: 20px auto;
-  overflow: hidden;
-  border: 5px solid #E74C3C;
-}
-
-#mapcanvas {
-  width: 650px;
-  height: 400px;
-  background-color: #3498db;
-  margin: 25px auto;
-  color: #2c3e50;
-  border: 5px solid #2980b9;
-}
-
-#maph1 {
-  color: #2c3e50;
-  font-size: 36px;
-}
-
-.mapp {
-  color: #2c3e50;
-  font-size: 16px;
-  margin-top: 10px;
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 #map {
-            height: 400px;
-            width: 100%;
+    height: 400px;
+    width: 100%;
+}
+
+#locationInfo {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+}
+
+#locationInfo p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+#map {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img[src*="custom-marker"] {
+    max-width: 40px;
+    max-height: 40px;
+}
+
+img[src*="custom-marker"] {
+    border-radius: 50%;
 }

@@ -1,4 +1,3 @@
-
 function initMap() {
 
     var markerLatLng = { lat: 42.12239031682727, lng: -88.37322237413316 };

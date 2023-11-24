@@ -214,6 +214,10 @@ body {
     color: #333;
 }
 
+#locationInfo h1 {
+    text-align: center;
+}
+
 #map {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }

@@ -5,6 +5,7 @@
     <title>ITMD 361-02 Fall 2023 Project 3</title>
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="favoritesong.js"></script>
   </head>
   
   <body id="songs-wrapper">
@@ -53,7 +54,12 @@
 	      <iframe src="https://www.youtube.com/embed/dGgBzSfgVsA" title="Lil Yachty - Drive ME Crazy!" allowfullscreen></iframe>
 	      <p>This song opens the second part of Lil Yachty's album "Lets Start Here." Lil Yachty and Diana Gordon, who sings the entire first stanza, both discuss how their passion for one another drives them insane. One section of the album, this one, is heavily influenced by neo-soul.</p>
       </section>
-      </div>
-  </body>
+	  <section id="favorite-song-section">
+        <h2 id="favorite-song-question">What's your favorite song?</h2>
+          <input type="text" id="favorite-song-input" placeholder="Enter your favorite song">
+          <button id="submit-button" onclick="submitFavoriteSong()">Submit</button>
+      </section>
+    </div>
 	
-</html>
+  </body>
+  </html>

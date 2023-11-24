@@ -1,23 +1,18 @@
-let map;
 
 function initMap() {
 
-  const position = { lat: 42.12240285010284, lng: -88.37323223969531 };
+    var markerLatLng = { lat: 42.12239031682727, lng: -88.37322237413316 };
 
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
 
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "Gilberts_Elementary_School",
-  });
+    var map = new google.maps.Map(document.getElementById('map'), {
+        center: markerLatLng,
+        zoom: 15
+    });
 
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "GilbertsElementarySchool",
-  });
+
+    var marker = new google.maps.Marker({
+        position: markerLatLng,
+        map: map,
+        title: 'Marker Title'
+    });
 }
-
-initMap();

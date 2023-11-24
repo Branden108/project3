@@ -1,6 +1,6 @@
 let map;
 
-async function initMap() {
+function initMap() {
 
   const position = { lat: 42.12240285010284, lng: -88.37323223969531 };
 

@@ -1,24 +1,15 @@
-function initMap(){
-  let mtPoint = { lat: 42.1223, lng: -88.3732 };
-  let map = new google.maps.Map(
-    document.getElementById('map'), {zoom: 12, center: mtPoint}
-  );
-  let marker = new google.maps.Marker({position: mtPoint, map: map});
-}
+function initMap() {
+  var markerLatLng = { lat: 42.1223, lng: -88.3732 };
 
-
-window.onload = function () {
-  const swiper = new Swiper('.swiper', {
-
-    loop: true,
-
-    pagination: {
-      el: '.swiper-pagination',
-    },
-
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: markerLatLng,
+    zoom: 15
   });
-};
+
+  var marker = new google.maps.Marker({
+    position: markerLatLng,
+    map: map,
+    title: 'Gilberts Grizzly',
+	icon: 'images/gilbertsgrizzly.png'
+  });
+}

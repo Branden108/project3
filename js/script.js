@@ -1,13 +1,23 @@
-function initMap()
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: 42.12249177774223, lng: -88.37281467861098},
-	zoom: 18,
-	mapId: 'f790a552a5b4967a'
-  })
-  
-  ;new google.maps.Marker({
-    position: { lat: 42.12249177774223, lng: -88.37281467861098 },
-    map,
-    title: "Gilberts Elementary School",
-	icon: 'images/gilbertsgrizzly.png'
+let map;
+
+async function initMap() {
+
+  const position = { lat: 42.12240285010284, lng: -88.37323223969531 };
+
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "Gilberts_Elementary_School",
   });
+
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "GilbertsElementarySchool",
+  });
+}
+
+initMap();
